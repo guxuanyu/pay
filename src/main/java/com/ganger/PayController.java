@@ -49,4 +49,10 @@ public class PayController {
 		return ResponseUtil.success(this.record);
 	}
 	
+	@GetMapping("kuayu")
+	public ResponseVo kuayu(HttpServletResponse response) {
+		//response.setHeader("Access-Control-Allow-Origin", "*");
+		return ResponseUtil.success("1");
+	}
+	
 }
